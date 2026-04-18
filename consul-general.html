@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consul General | Consulate General of India, Jaffna - Official Website</title>
+  <meta name="description" content="Consul General details of the Consulate General of India, Jaffna." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --saffron: #FF9933;
+      --saffron-light: #FFBD6E;
+      --saffron-dark: #D4780A;
+      --green: #138808;
+      --green-light: #1FAD0A;
+      --navy: #0A2240;
+      --navy-mid: #0D3060;
+      --navy-light: #1A4480;
+      --blue-accent: #1E5FA3;
+      --chakra-blue: #000080;
+      --white: #FFFFFF;
+      --off-white: #F5F6F8;
+      --gray-50: #F8F9FA;
+      --gray-100: #EAECEF;
+      --gray-200: #D0D4DB;
+      --gray-400: #9099A8;
+      --gray-600: #5A6272;
+      --gray-800: #222B38;
+      --text: #1C2534;
+      --text-muted: #5A6272;
+      --border: #D8DCE4;
+      --card-shadow: 0 1px 8px rgba(10,34,64,.08);
+      --card-shadow-hover: 0 3px 12px rgba(10,34,64,.12);
+      --radius: 10px;
+      --radius-sm: 6px;
+      --font-display: 'Noto Sans', Arial, sans-serif;
+      --font-body: 'Noto Sans', Arial, sans-serif;
+      --transition: .22s cubic-bezier(.4,0,.2,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-body); color: var(--text); background: var(--white); line-height: 1.6; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { cursor: pointer; background: none; border: none; font-family: inherit; }
+
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+    .skip-nav { position: absolute; left: -999px; top: 4px; z-index: 9999; background: var(--saffron); color: var(--navy); padding: 8px 18px; border-radius: 4px; font-weight: 600; font-size: .875rem; }
+    .skip-nav:focus { left: 8px; }
+
+    .tricolor-top { display: flex; height: 5px; }
+    .tricolor-top span { flex: 1; }
+    .tricolor-top .tc-saffron { background: var(--saffron); }
+    .tricolor-top .tc-white  { background: var(--white); border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+    .tricolor-top .tc-green  { background: var(--green); }
+
+    .utility-bar { background: var(--navy); padding: 6px 0; font-size: .78rem; color: rgba(255,255,255,.75); border-bottom: 1px solid rgba(255,255,255,.08); }
+    .utility-bar .container { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .utility-left { display: flex; align-items: center; gap: 14px; }
+    .utility-left a { color: rgba(255,255,255,.75); transition: color var(--transition); }
+    .utility-left a:hover { color: var(--saffron); }
+    .utility-left span { color: rgba(255,255,255,.25); }
+    .utility-right { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .lang-group, .font-group { display: flex; align-items: center; gap: 4px; }
+    .lang-btn, .font-btn { background: rgba(255,255,255,.1); color: rgba(255,255,255,.8); border: 1px solid rgba(255,255,255,.15); border-radius: 3px; padding: 2px 7px; font-size: .73rem; font-family: var(--font-body); transition: all var(--transition); }
+    .lang-btn:hover, .font-btn:hover, .lang-btn.active { background: var(--saffron); color: var(--navy); border-color: var(--saffron); }
+
+    .site-header { background: var(--white); padding: 14px 0; border-bottom: 3px solid var(--border); position: sticky; top: 0; z-index: 900; box-shadow: 0 1px 8px rgba(10,34,64,.08); }
+    .site-header .container { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .brand-emblem { width: 64px; height: 64px; object-fit: contain; }
+    .brand-divider { width: 2px; height: 50px; background: var(--saffron); border-radius: 2px; }
+    .brand-text { display: flex; flex-direction: column; }
+    .brand-text .org { font-family: var(--font-body); font-size: 1.25rem; font-weight: 700; color: var(--navy); line-height: 1.2; letter-spacing: normal; }
+    .brand-text .loc { font-size: .8rem; color: var(--text-muted); font-weight: 400; letter-spacing: .08em; text-transform: uppercase; margin-top: 3px; }
+    .brand-text .loc span { color: var(--saffron-dark); font-weight: 600; }
+
+    .header-tools { display: flex; align-items: center; gap: 16px; }
+    .clock-block { display: flex; flex-direction: column; gap: 5px; }
+    .clock-row { display: flex; align-items: center; gap: 7px; font-size: .75rem; color: var(--text-muted); }
+    .clock-row .flag { width: 20px; height: 14px; object-fit: cover; border-radius: 2px; border: 1px solid var(--border); }
+    .clock-row time { font-weight: 500; color: var(--navy); min-width: 105px; }
+
+    .search-form { display: flex; align-items: center; background: var(--off-white); border: 1.5px solid var(--border); border-radius: 24px; overflow: hidden; transition: border-color var(--transition), box-shadow var(--transition); }
+    .search-form:focus-within { border-color: var(--navy-light); box-shadow: 0 0 0 3px rgba(30,95,163,.12); }
+    .search-form input { border: none; background: transparent; padding: 8px 16px; font-size: .82rem; font-family: var(--font-body); color: var(--text); width: 210px; outline: none; }
+    .search-form button { background: var(--navy); border: none; color: white; width: 42px; height: 36px; border-radius: 0 24px 24px 0; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: background var(--transition); }
+    .search-form button:hover { background: var(--navy-light); }
+    .search-form button svg { width: 18px; height: 18px; display: block; }
+
+    .primary-nav { background: var(--navy); position: sticky; top: 95px; z-index: 890; }
+    .primary-nav .container { position: relative; }
+    .nav-list { display: flex; align-items: stretch; }
+    .nav-item { position: relative; }
+    .nav-link, .nav-toggle { display: flex; align-items: center; gap: 5px; padding: 13px 16px; font-size: .82rem; font-weight: 500; color: rgba(255,255,255,.85); background: none; border: none; cursor: pointer; font-family: var(--font-body); transition: color var(--transition), background var(--transition); white-space: nowrap; border-bottom: 3px solid transparent; }
+    .nav-link:hover, .nav-toggle:hover, .nav-link.active { color: var(--white); background: rgba(255,255,255,.07); border-bottom-color: var(--saffron); }
+    .nav-toggle svg { width: 9px; height: 6px; transition: transform var(--transition); }
+    .nav-item:hover .nav-toggle svg, .nav-item.open .nav-toggle svg { transform: rotate(180deg); }
+    .dropdown { position: absolute; top: 100%; left: 0; min-width: 240px; background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--saffron); border-radius: 0 0 var(--radius) var(--radius); box-shadow: 0 3px 12px rgba(10,34,64,.12); opacity: 0; pointer-events: none; transform: translateY(-8px); transition: all var(--transition); z-index: 999; }
+    .nav-item:hover .dropdown, .nav-item.open .dropdown { opacity: 1; pointer-events: all; transform: translateY(0); }
+    .dropdown a { display: block; padding: 10px 18px; font-size: .81rem; color: var(--text); border-bottom: 1px solid var(--gray-100); transition: all var(--transition); }
+    .dropdown a:last-child { border-bottom: none; }
+    .dropdown a:hover { background: var(--off-white); color: var(--navy); padding-left: 24px; }
+    .nav-hamburger { display: none; }
+
+    .container { width: 100%; max-width: none; margin: 0 auto; padding: 0 clamp(24px, 5.5vw, 84px); }
+    .section { padding: 60px 0; }
+    .section-header { margin-bottom: 36px; }
+    .section-tag { display: inline-block; font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--saffron-dark); padding: 4px 12px; background: rgba(255,153,51,.1); border-radius: 20px; margin-bottom: 10px; }
+    .section-title { font-family: var(--font-body); font-size: 1.8rem; font-weight: 700; color: var(--navy); line-height: 1.25; }
+    .section-divider { width: 48px; height: 3px; background: var(--saffron); border-radius: 2px; margin-top: 14px; }
+
+    .breadcrumb-bar { background: var(--off-white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: .8rem; color: var(--text-muted); padding: 10px 0; }
+    .breadcrumb a { color: var(--navy-light); }
+    .breadcrumb .current { color: var(--text); font-weight: 600; }
+
+    .cg-main-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; align-items: stretch; }
+    .cg-profile-panel, .cg-links-panel { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--card-shadow); height: 100%; }
+    .cg-profile-panel { padding: 28px; }
+    .cg-profile-card { display: grid; grid-template-columns: 200px minmax(0, 1fr); align-items: center; gap: 24px; background: #fbfcfd; border: 1px solid var(--gray-200); border-radius: var(--radius-sm); padding: 22px; }
+    .cg-profile-photo { width: 200px; height: 200px; object-fit: cover; border-radius: var(--radius-sm); border: 1px solid var(--gray-200); background: #fff; }
+    .cg-profile-content { display: flex; flex-direction: column; gap: 18px; }
+    .cg-profile-name { font-size: 1.35rem; color: var(--navy); line-height: 1.3; margin-bottom: 8px; }
+    .cg-profile-designation { font-size: 1.1rem; color: var(--text-muted); }
+    .cg-action-grid { margin-top: 0; display: grid; grid-template-columns: 1fr; gap: 14px; width: 100%; max-width: none; }
+    .cg-action { display: flex; align-items: center; gap: 12px; width: 100%; border: 1px solid var(--gray-200); border-radius: var(--radius-sm); padding: 14px 16px; font-size: .96rem; font-weight: 600; color: var(--navy); background: #fff; transition: background var(--transition), border-color var(--transition); }
+    .cg-action:hover { background: var(--off-white); border-color: var(--gray-400); }
+    .cg-action img { width: 28px; height: 28px; object-fit: cover; border-radius: 4px; }
+
+    .cg-links-panel { padding: 18px; }
+    .cg-links-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--gray-200); }
+    .cg-links-list { display: flex; flex-direction: column; }
+    .cg-links-list li { border-bottom: 1px solid var(--gray-100); }
+    .cg-links-list li:last-child { border-bottom: none; }
+    .cg-links-list a { display: block; padding: 10px 4px; font-size: .83rem; color: var(--text); transition: color var(--transition), padding-left var(--transition); }
+    .cg-links-list a:hover { color: var(--navy-light); padding-left: 8px; }
+    .cg-links-list a.active-link { color: var(--navy); font-weight: 700; }
+
+    .site-footer { background: var(--navy); color: rgba(255,255,255,.75); padding: 38px 0 0; margin-top: 40px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 32px; }
+    .footer-brand .logo { font-size: 1.05rem; font-weight: 700; color: white; margin-bottom: 8px; }
+    .footer-brand .ministry { font-size: .7rem; color: rgba(255,255,255,.4); margin-bottom: 12px; letter-spacing: .05em; }
+    .footer-brand p { font-size: .78rem; line-height: 1.65; }
+    .footer-col h4 { color: white; font-size: .82rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,.1); }
+    .footer-col ul { display: flex; flex-direction: column; gap: 8px; }
+    .footer-col ul li a { font-size: .78rem; color: rgba(255,255,255,.62); }
+    .footer-col ul li a:hover { color: var(--saffron-light); }
+    .footer-meta { font-size: .74rem; color: rgba(255,255,255,.45); }
+    .footer-meta div { margin-bottom: 6px; }
+    .footer-meta span.lbl { color: rgba(255,255,255,.6); margin-right: 6px; }
+    .footer-meta a { color: rgba(255,255,255,.55); }
+    .footer-meta a:hover { color: var(--saffron-light); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding: 16px 0; }
+    .footer-bottom .container { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .footer-bottom-text { font-size: .73rem; color: rgba(255,255,255,.4); }
+    .footer-bottom-links { display: flex; gap: 16px; }
+    .footer-bottom-links a { font-size: .73rem; color: rgba(255,255,255,.45); }
+    .footer-bottom-links a:hover { color: var(--saffron-light); }
+    .tricolor-footer { display: flex; height: 5px; }
+    .tricolor-footer span { flex: 1; }
+
+    .site-social-float {
+      position: fixed;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1200;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: #ffffff;
+      border: 1px solid #c9d0da;
+      border-radius: 10px;
+      padding: 10px 8px;
+      box-shadow: 0 2px 10px rgba(10,34,64,.12);
+    }
+    .site-social-float a {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      opacity: .92;
+    }
+    .site-social-float .fb { background: #1877F2; }
+    .site-social-float .ig { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+    .site-social-float .yt { width: 44px; border-radius: 10px; background: #fff; border: 1px solid #222; }
+    .site-social-float .x { background: #111; }
+    .site-social-float .social-icon { width: 20px; height: 20px; display: block; }
+    .site-social-float .social-icon path,
+    .site-social-float .social-icon circle,
+    .site-social-float .social-icon rect { fill: #fff; }
+    .site-social-float .yt .social-icon { width: 28px; height: 20px; }
+    .site-social-float .yt .social-icon .yt-bg { fill: #ff0000; }
+    .site-social-float .yt .social-icon .yt-play { fill: #ffffff; }
+    .site-social-float .ig .social-icon path,
+    .site-social-float .ig .social-icon circle,
+    .site-social-float .ig .social-icon rect { fill: none; stroke: #fff; stroke-width: 2; }
+
+    #back-top { position: fixed; bottom: 24px; right: 24px; z-index: 800; width: 42px; height: 42px; border-radius: 50%; background: var(--saffron); color: var(--navy); border: none; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 2px 8px rgba(10,34,64,.14); opacity: 0; transform: translateY(16px); transition: all var(--transition); }
+    #back-top.show { opacity: 1; transform: translateY(0); }
+    #back-top:hover { background: var(--navy); color: white; transform: translateY(-2px); }
+
+    @media (max-width: 1024px) {
+      .cg-main-layout { grid-template-columns: 1fr; }
+      .cg-links-panel { order: 2; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .site-social-float { right: 8px; }
+    }
+    @media (max-width: 768px) {
+      .clock-block { display: none; }
+      .primary-nav { top: 0; }
+      .nav-hamburger { display: flex; flex-direction: column; gap: 5px; padding: 10px 16px; margin-left: auto; }
+      .nav-hamburger span { width: 22px; height: 2px; background: white; border-radius: 2px; transition: all var(--transition); }
+      .nav-hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+      .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+      .nav-hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+      .nav-list { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--navy); z-index: 999; box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+      .nav-list.open { display: flex; }
+      .dropdown { position: static; opacity: 1; pointer-events: all; transform: none; box-shadow: none; border: none; border-radius: 0; border-top: 1px solid rgba(255,255,255,.1); display: none; background: rgba(255,255,255,.05); }
+      .dropdown.open { display: block; }
+      .dropdown a { color: rgba(255,255,255,.7); padding: 9px 32px; }
+      .cg-profile-card { grid-template-columns: 1fr; text-align: center; }
+      .cg-profile-photo { width: 170px; height: 170px; margin: 0 auto; }
+      .cg-profile-content { align-items: center; }
+      .cg-action-grid { width: 100%; }
+      .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+      .site-social-float {
+        position: static;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        width: fit-content;
+        margin: 10px auto 6px;
+        box-shadow: none;
+      }
+      .search-form input { width: 160px; }
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
+
+<div class="tricolor-top" aria-hidden="true">
+  <span class="tc-saffron"></span>
+  <span class="tc-white"></span>
+  <span class="tc-green"></span>
+</div>
+
+<div class="utility-bar" role="region" aria-label="Accessibility and utility links">
+  <div class="container">
+    <div class="utility-left">
+      <a href="https://www.cgijaffna.gov.in/page/display/77">Screen Reader Access</a>
+      <span aria-hidden="true">|</span>
+      <a href="#main-content">Skip to main content</a>
+    </div>
+    <div class="utility-right">
+      <div class="lang-group" role="group" aria-label="Language selection">
+        <button class="lang-btn active" aria-label="English">EN</button>
+        <button class="lang-btn" aria-label="Tamil">TA</button>
+        <button class="lang-btn" aria-label="Hindi">HI</button>
+        <button class="lang-btn" aria-label="Sinhala">SI</button>
+      </div>
+      <div class="font-group" role="group" aria-label="Text size">
+        <button class="font-btn" data-action="decrease" aria-label="Decrease text size">A-</button>
+        <button class="font-btn" data-action="reset" aria-label="Reset text size">A</button>
+        <button class="font-btn" data-action="increase" aria-label="Increase text size">A+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="index.html" class="brand" aria-label="Consulate General of India, Jaffna - Home">
+      <img class="brand-emblem" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/120px-Emblem_of_India.svg.png" alt="State Emblem of India" />
+      <div class="brand-divider" aria-hidden="true"></div>
+      <div class="brand-text">
+        <span class="org">Consulate General of India</span>
+        <span class="loc">Jaffna, <span>Sri Lanka</span></span>
+      </div>
+    </a>
+    <div class="header-tools">
+      <div class="clock-block" aria-label="Current time">
+        <div class="clock-row">
+          <time class="clock-text" data-timezone="Asia/Kolkata" aria-live="off"></time>
+          <img class="flag" src="https://flagcdn.com/w40/in.png" alt="India" width="20" height="14" />
+        </div>
+        <div class="clock-row">
+          <time class="clock-text" data-timezone="Asia/Colombo" aria-live="off"></time>
+          <img class="flag" src="https://flagcdn.com/w40/lk.png" alt="Sri Lanka" width="20" height="14" />
+        </div>
+      </div>
+      <form class="search-form" action="https://www.cgijaffna.gov.in/search/search_all" method="get" role="search" aria-label="Search">
+        <label for="site-search" class="sr-only">Search this website</label>
+        <input type="search" id="site-search" name="txtSearchHeader" placeholder="Search..." autocomplete="off" />
+        <button type="submit" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M10.5 3a7.5 7.5 0 0 1 5.96 12.05l4.25 4.25-1.42 1.42-4.25-4.25A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" fill="currentColor"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-list">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-list" id="nav-list" role="list">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+
+      <li class="nav-item">
+        <button class="nav-toggle" aria-haspopup="true" aria-expanded="false">Consulate General <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></button>
+        <ul class="dropdown" role="menu">
+          <li><a href="consul-general.html">Consul General</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/185" target="_blank" rel="noopener noreferrer">Officer List</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/94" target="_blank" rel="noopener noreferrer">Former Consuls General</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/54" target="_blank" rel="noopener noreferrer">Location of the Consulate</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/55" target="_blank" rel="noopener noreferrer">Jurisdiction</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/92" target="_blank" rel="noopener noreferrer">Library</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/23" target="_blank" rel="noopener noreferrer">Holiday List</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/34" target="_blank" rel="noopener noreferrer">Right To Information</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <button class="nav-toggle" aria-haspopup="true" aria-expanded="false">Visa <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></button>
+        <ul class="dropdown" role="menu">
+          <li><a href="https://www.cgijaffna.gov.in/page/display/79" target="_blank" rel="noopener noreferrer">Online Visa Application</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/139" target="_blank" rel="noopener noreferrer">Visa Categories</a></li>
+          <li><a href="https://indianvisaonline.gov.in/visa/instruction.html" target="_blank" rel="noopener noreferrer">Visa Instructions</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/announcements/detail/42" target="_blank" rel="noopener noreferrer">Visa Fees</a></li>
+          <li><a href="https://indianvisaonline.gov.in/evisa/tvoa.html" target="_blank" rel="noopener noreferrer">E-Visa</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/142" target="_blank" rel="noopener noreferrer">Emergency Visa</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <button class="nav-toggle" aria-haspopup="true" aria-expanded="false">Passport &amp; Consular <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></button>
+        <ul class="dropdown" role="menu">
+          <li><a href="https://www.cgijaffna.gov.in/page/display/117" target="_blank" rel="noopener noreferrer">Passport &amp; Consular Services</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/119" target="_blank" rel="noopener noreferrer">OCI Card Scheme</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/118" target="_blank" rel="noopener noreferrer">Application Forms</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/registration/display" target="_blank" rel="noopener noreferrer">Registration of Indian Nationals</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/141" target="_blank" rel="noopener noreferrer">Voting Rights Abroad</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <button class="nav-toggle" aria-haspopup="true" aria-expanded="false">India-Sri Lanka Relations <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></button>
+        <ul class="dropdown" role="menu">
+          <li><a href="bilateral.html">Bilateral Relations</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/52">Economic &amp; Trade Relations</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/178">Educational Relations</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/122">Bilateral Documents</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/98">Cultural Relations</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="https://www.cgijaffna.gov.in/page/display/76" class="nav-link" target="_blank" rel="noopener noreferrer">Projects</a></li>
+      <li class="nav-item"><a href="https://www.cgijaffna.gov.in/page/display/126" class="nav-link" target="_blank" rel="noopener noreferrer">Education</a></li>
+
+      <li class="nav-item">
+        <button class="nav-toggle" aria-haspopup="true" aria-expanded="false">Media Center <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></button>
+        <ul class="dropdown" role="menu">
+          <li><a href="https://www.cgijaffna.gov.in/announcements/all_announcements/" target="_blank" rel="noopener noreferrer">Announcements</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/tenders/all_tenders/" target="_blank" rel="noopener noreferrer">Tenders</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/news/all_press_release/" target="_blank" rel="noopener noreferrer">Press Releases</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/album/all_albums" target="_blank" rel="noopener noreferrer">Photo Gallery</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="breadcrumb-bar" role="navigation" aria-label="Breadcrumb">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">&gt;</span>
+      <span class="current">Consul General</span>
+    </div>
+  </div>
+</div>
+
+<main id="main-content" tabindex="-1">
+  <section class="section" aria-labelledby="consul-general-heading">
+    <div class="container">
+      <div class="section-header">
+        <h1 id="consul-general-heading" class="section-title">Consul General</h1>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="cg-main-layout">
+        <article class="cg-profile-panel" aria-label="Consul General profile">
+          <div class="cg-profile-card">
+            <img class="cg-profile-photo" src="https://www.cgijaffna.gov.in/uploads/2025/image.png" alt="Shri Sai Murali S." loading="lazy" />
+            <div class="cg-profile-content">
+              <div class="cg-profile-text">
+                <p class="cg-profile-name"><strong>Shri Sai Murali S.</strong></p>
+                <p class="cg-profile-designation"><strong>Consul General</strong></p>
+              </div>
+              <div class="cg-action-grid" aria-label="Consul General links">
+                <a class="cg-action" href="https://www.cgijaffna.gov.in/page/display/144" target="_blank" rel="noopener noreferrer">
+                  <img src="https://www.cgijaffna.gov.in/uploads/2025/profile-icon-design-free-vector.jpg" alt="" aria-hidden="true" />
+                  <span>View Profile</span>
+                </a>
+                <a class="cg-action" href="https://www.cgijaffna.gov.in/page/display/145" target="_blank" rel="noopener noreferrer">
+                  <img src="https://www.cgijaffna.gov.in/uploads/2025/icons8-comment-50.png" alt="" aria-hidden="true" />
+                  <span>Speeches</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <aside class="cg-links-panel" aria-label="Consulate General navigation">
+          <h2 class="cg-links-title">Consulate General</h2>
+          <ul class="cg-links-list">
+            <li><a class="active-link" href="consul-general.html">Consul General</a></li>
+            <li><a href="https://www.cgijaffna.gov.in/page/display/94" target="_blank" rel="noopener noreferrer">Former Consuls General</a></li>
+            <li><a href="https://www.cgijaffna.gov.in/page/display/54" target="_blank" rel="noopener noreferrer">Location of the Consulate</a></li>
+            <li><a href="https://www.cgijaffna.gov.in/page/display/55" target="_blank" rel="noopener noreferrer">Jurisdiction</a></li>
+            <li><a href="https://www.cgijaffna.gov.in/page/display/92" target="_blank" rel="noopener noreferrer">Library</a></li>
+            <li><a href="https://www.cgijaffna.gov.in/page/display/47" target="_blank" rel="noopener noreferrer">About India Corner</a></li>
+            <li><a href="https://www.cgijaffna.gov.in/page/display/23" target="_blank" rel="noopener noreferrer">Holiday List</a></li>
+            <li><a href="https://www.cgijaffna.gov.in/page/display/72" target="_blank" rel="noopener noreferrer">Contact our High Commission &amp; Consulates in Sri Lanka</a></li>
+            <li><a href="https://www.cgijaffna.gov.in/page/display/34" target="_blank" rel="noopener noreferrer">Right To Information</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo" id="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Consulate General of India, Jaffna</div>
+        <div class="ministry">Ministry of External Affairs - Government of India</div>
+        <p>Official website providing consular services and information for residents and visitors in the jurisdiction of Jaffna, Killinochchi, Mullaitivu, Mannar and Vavunia.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Policies">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/44" target="_blank" rel="noopener noreferrer">Copyright Policy</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/140" target="_blank" rel="noopener noreferrer">Terms and Conditions</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/51" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/page/display/52" target="_blank" rel="noopener noreferrer">Hyperlinking Policy</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Quick access">
+        <h4>Quick Access</h4>
+        <ul>
+          <li><a href="https://www.cgijaffna.gov.in/announcements/all_announcements/" target="_blank" rel="noopener noreferrer">Announcements</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/tenders/all_tenders/" target="_blank" rel="noopener noreferrer">Tenders</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/news/all_press_release/" target="_blank" rel="noopener noreferrer">Press Releases</a></li>
+          <li><a href="https://www.cgijaffna.gov.in/album/all_albums" target="_blank" rel="noopener noreferrer">Photo Gallery</a></li>
+          <li><a href="consul-general.html">Consul General</a></li>
+          <li><a href="contact.html">Contact Details</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h4>Website Info</h4>
+        <div class="footer-meta">
+          <div><span class="lbl">Visitors:</span>359,528</div>
+          <div><span class="lbl">Last Modified:</span>24 March 2026</div>
+          <div><span class="lbl">Security:</span><a href="https://www.cgijaffna.gov.in/uploads/2025/Safe%20to%20Host.pdf" target="_blank" rel="noopener noreferrer">Safe to Host Certificate</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <span class="footer-bottom-text">&copy; Consulate General of India, Jaffna 2013-2026. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="https://www.cgijaffna.gov.in/page/display/44" target="_blank" rel="noopener noreferrer">Copyright</a>
+        <a href="https://www.cgijaffna.gov.in/page/display/51" target="_blank" rel="noopener noreferrer">Privacy</a>
+        <a href="https://www.cgijaffna.gov.in/page/display/52" target="_blank" rel="noopener noreferrer">Hyperlinking</a>
+      </div>
+    </div>
+  </div>
+  <div class="tricolor-footer" aria-hidden="true">
+    <span style="background:var(--saffron)"></span>
+    <span style="background:#fff;border-top:1px solid #ccc"></span>
+    <span style="background:var(--green)"></span>
+  </div>
+</footer>
+
+<nav class="site-social-float" aria-label="Social media links">
+  <a class="fb" href="https://www.facebook.com/CGJaffna/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v5h4v-5h3.1l.9-4H13V9c0-.6.4-1 1-1z" /></svg>
+  </a>
+  <a class="ig" href="https://www.instagram.com/india_in_jaffna/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="5" ry="5" /><circle cx="12" cy="12" r="4" /><circle cx="17" cy="7" r="1" /></svg>
+  </a>
+  <a class="yt" href="https://www.youtube.com/@indiainsrilankahighcommiss7488/videos" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <svg class="social-icon" viewBox="0 0 28 20" aria-hidden="true" focusable="false"><rect class="yt-bg" x="1" y="2" width="26" height="16" rx="4" ry="4" /><path class="yt-play" d="M12 7l6 3-6 3z" /></svg>
+  </a>
+  <a class="x" href="https://x.com/cgjaffna" target="_blank" rel="noopener noreferrer" aria-label="X">
+    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4h4.6l4 5.4L17.2 4H20l-6 6.9L20.4 20h-4.6l-4.3-5.8L6.4 20H3.6l6.2-7.1z" /></svg>
+  </a>
+</nav>
+
+<button id="back-top" aria-label="Back to top" title="Back to top">^</button>
+
+<script>
+(function () {
+  function updateClocks() {
+    document.querySelectorAll('.clock-text').forEach(el => {
+      const tz = el.dataset.timezone;
+      const now = new Date();
+      const parts = new Intl.DateTimeFormat('en-US', {
+        timeZone: tz,
+        weekday: 'short',
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+        hour: 'numeric',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+      }).formatToParts(now);
+
+      const get = (type) => (parts.find(p => p.type === type) || {}).value || '';
+      const weekday = get('weekday');
+      const month = get('month');
+      const day = get('day');
+      const year = get('year');
+      const hour = get('hour');
+      const minute = get('minute');
+      const second = get('second');
+      const dayPeriod = get('dayPeriod').toLowerCase();
+
+      el.textContent = `${weekday}, ${month} ${day}, ${year} at ${hour}:${minute}:${second} ${dayPeriod}`;
+    });
+  }
+  updateClocks();
+  setInterval(updateClocks, 1000);
+
+  document.querySelectorAll('.nav-toggle').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const li = this.closest('.nav-item');
+      const isOpen = li.classList.contains('open');
+      document.querySelectorAll('.nav-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) li.classList.add('open');
+      this.setAttribute('aria-expanded', !isOpen);
+    });
+  });
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.nav-item.open').forEach(el => el.classList.remove('open'));
+  });
+
+  const ham = document.getElementById('hamburger');
+  const navList = document.getElementById('nav-list');
+  ham.addEventListener('click', function () {
+    const isOpen = navList.classList.toggle('open');
+    ham.classList.toggle('open', isOpen);
+    ham.setAttribute('aria-expanded', isOpen);
+  });
+
+  if (window.innerWidth <= 768) {
+    document.querySelectorAll('.nav-toggle').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const dd = this.nextElementSibling;
+        dd.classList.toggle('open');
+      });
+    });
+  }
+
+  let fs = 16;
+  document.querySelectorAll('.font-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const a = this.dataset.action;
+      if (a === 'increase') fs = Math.min(fs + 2, 22);
+      else if (a === 'decrease') fs = Math.max(fs - 2, 12);
+      else fs = 16;
+      document.documentElement.style.fontSize = fs + 'px';
+    });
+  });
+
+  const btt = document.getElementById('back-top');
+  window.addEventListener('scroll', () => btt.classList.toggle('show', window.scrollY > 300));
+  btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+})();
+</script>
+</body>
+</html>
