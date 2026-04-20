@@ -211,6 +211,28 @@
 }
 
 @media (max-width: 768px) {
+  .clock-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    width: 100%;
+    padding: 4px 0 2px;
+  }
+
+  .clock-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.72rem;
+    line-height: 1.35;
+  }
+
+  .clock-row time {
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
   .home-cols {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -298,6 +320,15 @@
 }
 
 @media (max-width: 560px) {
+  .clock-row {
+    font-size: 0.68rem;
+  }
+
+  .clock-row .flag {
+    width: 16px;
+    height: 11px;
+  }
+
   .utility-bar {
     font-size: 0.73rem;
   }
